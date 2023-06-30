@@ -1,5 +1,5 @@
 
-#EJERCICIO
+# EJERCICIO
 
 crear un método en el slice de tal forma que pueda mandar a cero solamente un item :) 
 

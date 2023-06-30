@@ -3,6 +3,12 @@
 
 crear un método en el slice de tal forma que pueda mandar a cero solamente un item :) 
 
+git clone https://github.com/moche123/reactfinalg7.git
+yarn install
+yarn dev
+
+
+
 
 
 # vite-template-redux

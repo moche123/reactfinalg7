@@ -2,7 +2,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { skills } from '../../sources';
 import './Work.css'
-import { clearVotes, voteSkill } from '../../portfolio/votationSlice';
+import { clearVotes, voteSkill,clearOneVote } from '../../portfolio/votationSlice';
 
 const Work = () => {
    const dispatch = useDispatch();
@@ -28,9 +28,12 @@ const Work = () => {
                 <div>
                   votes: {vots.payload.votation.skills[skill.id].count}
                 </div>
-                <div>
+                <div className="buttons">
                   <button onClick={() => dispatch(voteSkill( skill.id ))} className="button-vote">
                     VOTE!
+                  </button>
+                  <button onClick={() => dispatch(clearOneVote( skill.id ))} className="button-clear-individual">
+                    CLEAR ONLY
                   </button>
 
                 </div> 

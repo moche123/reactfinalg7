@@ -51,6 +51,11 @@ export const votationSlice = createSlice({
                 element.count = 0  //* "MODIFYING STATE (OLDSTATE)"
             });
         },
+        clearOneVote: (state,action) => {
+          state.skills.forEach(element => {
+            if(element.id === action.payload) element.count=0 ///* "MODIFYING STATE (OLDSTATE)"
+          });
+        },
         //LIMPIAR UNO
         // asdadsas: sdadsasd
         // asd
@@ -60,7 +65,7 @@ export const votationSlice = createSlice({
     
 })
 
-export const { voteSkill,clearVotes } = votationSlice.actions //*MAPEAR ACTION AND REDUCER
+export const { voteSkill,clearVotes,clearOneVote } = votationSlice.actions //*MAPEAR ACTION AND REDUCER
 
 export const selectVote = (state:any)=> state.votation.value
 

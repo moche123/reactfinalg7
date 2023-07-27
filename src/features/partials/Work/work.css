@@ -35,7 +35,7 @@
     width: 100%;
  }
   
- .button-clear,.button-vote{
+ .button-clear,.button-vote,.button-clear-individual{
     appearance: none;
     border: 1px solid rgba(27, 31, 35, .15);
     border-radius: 6px;
@@ -58,8 +58,21 @@
     background-color: rgba(0, 215, 187, 0.986);
   
  }
-  
-  
+
+
+ .button-clear-individual{
+   background-color: rgba(25, 0, 215, 0.998);
+ 
+   }
+ 
+  .buttons{
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+   display: flex;
+   flex-direction: column;
+  }
+
+
  @media (max-width: 768px){
     .container-skill{
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

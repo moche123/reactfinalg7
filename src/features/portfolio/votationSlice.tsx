@@ -46,11 +46,14 @@ export const votationSlice = createSlice({
                 if(element.id === action.payload) element.count++ ///* "MODIFYING STATE (OLDSTATE)"
             });
         }, 
-        clearVotes: (state,action:IAction) => {
+        clearVotes: (state) => {
             state.skills.forEach(element => {
                 element.count = 0  //* "MODIFYING STATE (OLDSTATE)"
             });
-        }
+        },
+        //LIMPIAR UNO
+        // asdadsas: sdadsasd
+        // asd
     }
 
 

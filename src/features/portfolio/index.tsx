@@ -8,7 +8,7 @@ import Work from '../partials/Work'
 const PortFolio = () => {
   return (
     <React.Fragment>
-        <Header name='Luis' />
+        <Header name='Carlos' />
         <Work  />
     </React.Fragment>
   )

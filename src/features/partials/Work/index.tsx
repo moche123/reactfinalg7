@@ -12,7 +12,7 @@ const Work = () => {
     <div className='work-section'>
       <h3>My skills</h3>
       <br />
-      <button className='button-clear' onClick={ ()=> dispatch(clearVotes({})) }>CLEAR</button>
+      <button className='button-clear' onClick={ ()=> dispatch(clearVotes()) }>CLEAR</button>
       <br /><br /><br /><br /><br />
       
 
@@ -32,6 +32,7 @@ const Work = () => {
                   <button onClick={() => dispatch(voteSkill( skill.id ))} className="button-vote">
                     VOTE!
                   </button>
+
                 </div> 
               </div>
 
